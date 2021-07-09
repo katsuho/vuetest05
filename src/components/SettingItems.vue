@@ -12,12 +12,12 @@
           ● 収入
         </h2>
       </v-col>
-      <v-col cols="12" v-for="(income, index) in incomes" :key="income.id">
+      <v-col class="lst-item"  cols="12" v-for="(income, index) in incomes" :key="income.id">
         <v-row>
-          <v-col cols="1" style="text-align:right">
+          <v-col cols="1" sm="1" style="text-align:right">
             {{index + 1}}
           </v-col>
-          <v-col cols="3">
+          <v-col cols="5" sm="3">
             <v-text-field
               dense
               v-model="income.incomeNm"
@@ -26,7 +26,7 @@
               clearable
           ></v-text-field>
           </v-col>
-          <v-col cols="3">
+          <v-col cols="5" sm="3">
             <v-text-field
               dense
               prefix="¥"
@@ -37,13 +37,14 @@
               v-money="money"
             ></v-text-field>
           </v-col>
-          <v-col cols="3">
+          <v-col cols="12" sm="3">
             <v-btn
               class="mx-2"
               fab
               light
               small
               color="white"
+              @click="addRowIncome(index)"
             >
               <v-icon dark>
                 mdi-plus
@@ -55,6 +56,7 @@
               light
               small
               color="white"
+              @click="delRowIncome(index)"
             >
               <v-icon dark>
                 mdi-minus
@@ -72,12 +74,12 @@
           ● 支出
         </h2>
       </v-col>
-      <v-col cols="12" v-for="(spending, index) in spendings" :key="spending.id">
+      <v-col class="lst-item" cols="12" v-for="(spending, index) in spendings" :key="spending.id">
         <v-row>
-          <v-col cols="1" style="text-align:right">
+          <v-col cols="1" sm="1" style="text-align:right">
             {{index + 1}}
           </v-col>
-          <v-col cols="3">
+          <v-col cols="5" sm="3">
             <v-text-field
               dense
               v-model="spending.spendingNm"
@@ -86,7 +88,7 @@
               clearable
           ></v-text-field>
           </v-col>
-          <v-col cols="3">
+          <v-col cols="5" sm="3">
             <v-text-field
               dense
               prefix="¥"
@@ -97,13 +99,14 @@
               v-money="money"
             ></v-text-field>
           </v-col>
-          <v-col cols="3">
+          <v-col cols="12" sm="3">
             <v-btn
               class="mx-2"
               fab
               light
               small
               color="white"
+              @click="addRowSpending(index)"
             >
               <v-icon dark>
                 mdi-plus
@@ -115,6 +118,7 @@
               light
               small
               color="white"
+              @click="delRowSpending(index)"
             >
               <v-icon dark>
                 mdi-minus
@@ -141,6 +145,16 @@
     </v-row>
   </v-container>
 </template>
+
+<style scoped lang="scss">
+.lst-item{
+  div.row{
+    + div.row{
+      margin-top: "3rem";
+    }
+  }
+}
+</style>
 
 <script lang="ts">
   import Vue from 'vue'
@@ -192,6 +206,26 @@
       }
     },
     methods:{
+      addRowIncome: function(rowNo:number){
+        // 収入行追加
+        this.incomes.splice(rowNo+1,0,{incomeNm:"", value:0});
+      },
+      delRowIncome: function(rowNo:number){
+        // 収入行削除
+        if(this.incomes.length != 1){
+          this.incomes.splice(rowNo,1);
+        }
+      },
+      addRowSpending: function(rowNo:number){
+        // 支出行追加
+        this.spendings.splice(rowNo+1,0,{spendingNm:"", value:0});
+      },
+      delRowSpending: function(rowNo:number){
+        // 支出行削除
+        if(this.spendings.length != 1){
+          this.spendings.splice(rowNo,1);
+        }
+      }
     }
   })
 </script>

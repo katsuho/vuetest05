@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuetest05/img/logo.63a7d78d.svg"
   },
   {
-    "revision": "1cd0afc1c6f472dea2ec5cdd0a468451",
+    "revision": "34bb05d2ff15a5d3a7e2e111f6f89c9d",
     "url": "/vuetest05/index.html"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuetest05/js/about.fe6750e4.js"
   },
   {
-    "revision": "aa5f7ba130ab099038a2",
-    "url": "/vuetest05/js/app.f41ff518.js"
+    "revision": "978799eefc978f121a84",
+    "url": "/vuetest05/js/app.5100ca07.js"
   },
   {
     "revision": "bc00f949e99f5b7e72e3",
