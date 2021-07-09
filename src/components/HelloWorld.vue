@@ -2,6 +2,13 @@
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
+        リンク
+        <a
+            href="./setting"
+          >Setting</a>
+      </v-col>
+
+      <v-col cols="12">
         <v-img
           :src="require('../assets/logo.svg')"
           class="my-3"
