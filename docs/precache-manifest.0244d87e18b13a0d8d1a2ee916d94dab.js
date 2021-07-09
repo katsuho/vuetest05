@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc00f949e99f5b7e72e3",
-    "url": "/vuetest05/css/chunk-0cba7658.1a31b591.css"
+    "revision": "1700764e558ae06ea462",
+    "url": "/vuetest05/css/chunk-01ed6347.7eb48428.css"
   },
   {
-    "revision": "d36933786c0fee5cfca3",
-    "url": "/vuetest05/css/chunk-7aeb5134.b71a074e.css"
+    "revision": "bc00f949e99f5b7e72e3",
+    "url": "/vuetest05/css/chunk-0cba7658.1a31b591.css"
   },
   {
     "revision": "53752efe782054665ef4",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuetest05/img/logo.63a7d78d.svg"
   },
   {
-    "revision": "34bb05d2ff15a5d3a7e2e111f6f89c9d",
+    "revision": "c32e232dcca2cd829d442091516a7734",
     "url": "/vuetest05/index.html"
   },
   {
@@ -24,16 +24,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuetest05/js/about.fe6750e4.js"
   },
   {
-    "revision": "978799eefc978f121a84",
-    "url": "/vuetest05/js/app.5100ca07.js"
+    "revision": "8a6a65e9aa8fc0d949a9",
+    "url": "/vuetest05/js/app.1c81bbdc.js"
+  },
+  {
+    "revision": "1700764e558ae06ea462",
+    "url": "/vuetest05/js/chunk-01ed6347.a468ea96.js"
   },
   {
     "revision": "bc00f949e99f5b7e72e3",
     "url": "/vuetest05/js/chunk-0cba7658.f57aec75.js"
-  },
-  {
-    "revision": "d36933786c0fee5cfca3",
-    "url": "/vuetest05/js/chunk-7aeb5134.1e522967.js"
   },
   {
     "revision": "53752efe782054665ef4",
