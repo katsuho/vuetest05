@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuetest05/img/logo.63a7d78d.svg"
   },
   {
-    "revision": "522291d5f5d27e1adabf2b50af877738",
+    "revision": "1562915284cc1166e80b1dfd1b5db461",
     "url": "/vuetest05/index.html"
   },
   {
@@ -40,7 +40,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vuetest05/js/chunk-vendors.ceb5cfa9.js"
   },
   {
-    "revision": "717684c1bdd96a0f637d494db4da4438",
+    "revision": "3290ee1f73104cc4175969624a27170e",
     "url": "/vuetest05/manifest.json"
   },
   {
